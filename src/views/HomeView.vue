@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import { ref } from "vue";
+
+const message = ref<string>("Hello")
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    {{message}}
   </main>
 </template>

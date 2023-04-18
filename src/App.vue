@@ -1,7 +1,12 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import SiteHeader from "@/layouts/SiteHeader.vue";
+import SiteFooter from "@/layouts/SiteFooter.vue";
 </script>
 
 <template>
-  <RouterView />
+  <div id="app">
+    <SiteHeader />
+    <RouterView />
+    <SiteFooter />
+  </div>
 </template>
